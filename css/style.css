@@ -160,11 +160,11 @@
 
     .row {
         color: var(--sw-white);
-        padding: 2rem 0;
+        padding: 1.5rem 0;
     }
 
     .col {
-        padding: 0 .5rem;
+        padding: .5rem;
     }
 
     .card-img img {
@@ -186,7 +186,6 @@
         text-align: center;
         padding-top: .5rem;
     }
-
 
 /* #endregion column */
 
