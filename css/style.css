@@ -69,6 +69,7 @@
 
     .debug-white {
         color: white;
+        padding: 20px;
     }
 
 /* #endregion Debug */
@@ -82,7 +83,6 @@
         left: 0;
         height: 90px;
         background-color: rgba(0, 0, 0, 0.5);
-        position: relative;
     }
 
     .upgrade a { 
