@@ -8,6 +8,7 @@
     }
 
     :root {
+        --sw-white: white;
         --sw-black: black;
         --sw-dark: #080b12;       /* sfondo parte a destra */
         --sw-dark-foot: #282828;  /* sfondo footer */
@@ -18,7 +19,7 @@
 
     body {
         font-family: sans-serif;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     main {
@@ -53,7 +54,56 @@
         display: flex;
     }
 
+    .jc-fe {
+        justify-content: flex-end;
+    }
+
+    .ai-c {
+        align-items: center;
+    }
+
 /* #endregion Utilities */
+
+
+/* #region Debug */
+
+    .debug-white {
+        color: white;
+    }
+
+/* #endregion Debug */
+
+
+/* #region Upgrade */
+
+    .upgrade {
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 90px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+
+    .upgrade a { 
+        text-decoration: none;
+        color: var(--sw-white);
+        border: 1px solid var(--sw-white);
+        margin: 20px;
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+
+/* #endregion Upgrade */
+
+
+/* #region Navigatore */
+
+    nav {
+        color: var(--sw-grey);
+    }
+
+/* #endregion Navigatore */
 
 
 
