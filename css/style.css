@@ -1,10 +1,19 @@
 
 /* #region Common */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --sw-black: black;
+        --sw-dark: #080b12;       /* sfondo parte a destra */
+        --sw-dark-foot: #282828;  /* sfondo footer */
+        --sw-grey-home: #d2d2d2;  /* icona home */
+        --sw-grey-pl: #a3a3a3;    /* icona crea playlist */
+        --sw-grey: #707070;       /* testo */
+    }
 
 /* #endregion Common */
