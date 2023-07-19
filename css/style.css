@@ -10,6 +10,7 @@
     :root {
         --sw-white: white;
         --sw-black: black;
+        --sw-black-up: rgba(0, 0, 0, 0.5);     /* sfondo upgrade */
         --sw-dark: #080b12;       /* sfondo parte a destra */
         --sw-dark-foot: #282828;  /* sfondo footer */
         --sw-grey-home: #d2d2d2;  /* icona home */
@@ -48,14 +49,36 @@
 /* #endregion Common */
 
 
+/* #region Debug */
+
+.debug-white {
+    color: white;
+    padding: 20px;
+}
+
+/* #endregion Debug */
+
+
 /* #region Utilities */
 
     .d-flex {
         display: flex;
     }
 
+    .f-wrap {
+        flex-wrap: wrap;
+    }
+
     .jc-fe {
         justify-content: flex-end;
+    }
+
+    .jc-c {
+        justify-content: center;
+    }
+
+    .jc-sb {
+        justify-content: space-between;
     }
 
     .ai-c {
@@ -65,16 +88,6 @@
 /* #endregion Utilities */
 
 
-/* #region Debug */
-
-    .debug-white {
-        color: white;
-        padding: 20px;
-    }
-
-/* #endregion Debug */
-
-
 /* #region Upgrade */
 
     .upgrade {
@@ -82,7 +95,7 @@
         top: 0;
         left: 0;
         height: 90px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: var(--sw-black-up);
     }
 
     .upgrade a { 
@@ -100,7 +113,20 @@
 /* #region Navigatore */
 
     nav {
+        padding: 1rem 0;
+    }
+
+    nav ul {
+        list-style: none;
+        width: 80%;
+        margin: auto;
+    }
+
+    nav a {
+        text-decoration: none;
         color: var(--sw-grey);
+        font-weight: bold;
+        margin: 0 .5rem;
     }
 
 /* #endregion Navigatore */
