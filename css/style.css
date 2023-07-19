@@ -16,4 +16,57 @@
         --sw-grey: #707070;       /* testo */
     }
 
+    body {
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    main {
+        height: calc(100vh - 90px);
+    }
+
+    .sidebar {
+        width: 230px;
+        background-color: var(--sw-black);
+    }
+
+    .main-pg {
+        width: calc(100% - 230px);
+        background-color: var(--sw-dark);
+        overflow: auto;
+    }
+
+    footer {
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        height: 90px;
+        background-color: var(--sw-dark-foot);
+    }
+
 /* #endregion Common */
+
+
+/* #region Utilities */
+
+    .d-flex {
+        display: flex;
+    }
+
+/* #endregion Utilities */
+
+
+
+@media screen and (max-width: 1100px) {
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    
+}
