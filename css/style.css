@@ -39,9 +39,6 @@
     }
 
     footer {
-        position: sticky;
-        left: 0;
-        bottom: 0;
         height: 90px;
         background-color: var(--sw-dark-foot);
     }
