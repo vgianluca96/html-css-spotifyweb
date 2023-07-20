@@ -206,6 +206,12 @@
         width: 70%;
     }
 
+    .logo .favicon {
+        width: 100%;
+        filter: invert(1);
+        display: none;
+    }
+
     /* Link vari */
 
     .sidebar a {
@@ -347,5 +353,19 @@
     .main-pg {
         width: calc(100% - 50px);
     }
+
+    .col-12-sm {
+        width: 100%
+    }
+
+    .logo-spotify, .menu-voice-name, .playlist {
+        display: none;
+    }
+
+    .logo .favicon {
+        display: inline-block;
+    }
+
+
     
 }
