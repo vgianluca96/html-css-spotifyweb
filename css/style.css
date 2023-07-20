@@ -16,6 +16,7 @@
         --sw-grey-home: #d2d2d2;  /* icona home */
         --sw-grey-pl: #a3a3a3;    /* icona crea playlist */
         --sw-grey: #707070;       /* testo */
+        --sw-yellow: #adff2f;     /* giallo dei bordini */
     }
 
     body {
@@ -71,6 +72,10 @@
 
     .f-wrap {
         flex-wrap: wrap;
+    }
+
+    .fd-col {
+        flex-direction: column;
     }
 
     .jc-fe {
@@ -191,6 +196,8 @@
 
 /* #region sidebar */
 
+    /* Logo Spotify */
+
     .logo {
         padding: 1rem;
     }
@@ -198,6 +205,8 @@
     .logo img {
         width: 70%;
     }
+
+    /* Link vari */
 
     .sidebar a {
         text-decoration: none;
@@ -209,7 +218,7 @@
     }
 
     .menu-voice.selected {
-        box-shadow: inset 4px 0px 0px orange;
+        box-shadow: inset 4px 0px 0px var(--sw-yellow);
         color: var(--sw-white);
     }
 
@@ -234,6 +243,8 @@
         font-weight: bold;
         padding-left: .5rem;
     }
+
+    /* Menu Playlist */
 
     .playlist {
         padding: 1rem;
@@ -269,6 +280,30 @@
     .pl-list {
         height: 120px;
         overflow: auto;
+    }
+
+    /* Menu bottom */
+
+    .install-user {
+        padding: 1rem;
+        color: var(--sw-grey);
+    }
+
+    .install-img {
+        width: 10%;
+    }
+
+    .user-img {
+        width: 10%;
+    }
+
+    .install-img img, .user-img img {
+        width: 100%;
+    }
+
+    .user-img {
+        background-color: var(--sw-grey);
+        border-radius: 50%;
     }
 
 
