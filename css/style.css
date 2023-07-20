@@ -358,7 +358,7 @@
         width: 100%
     }
 
-    .logo-spotify, .menu-voice-name, .playlist {
+    .logo-spotify, .menu-voice-name, .playlist, .install-descr, .user-descr, .install-user hr {
         display: none;
     }
 
