@@ -209,7 +209,7 @@
     }
 
     .menu-voice.selected {
-        border-left: 4px solid orange;
+        box-shadow: inset 4px 0px 0px orange;
         color: var(--sw-white);
     }
 
@@ -222,7 +222,7 @@
     }
 
     .menu-voice-icon {
-        width: calc(100% /12 *2);
+        width: 10%;
     }
 
     .menu-voice-icon img {
@@ -252,7 +252,7 @@
     }
 
     .create-icon {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .create-descr {
@@ -267,6 +267,7 @@
     }
 
     .pl-list {
+        height: 120px;
         overflow: auto;
     }
 
