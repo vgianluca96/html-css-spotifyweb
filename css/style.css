@@ -291,31 +291,46 @@
     /* Menu bottom */
 
     .install-user {
-        padding: 1rem;
+        padding: 0 1rem;
         color: var(--sw-grey);
+    }
+
+    .install, .user {
+        padding: .5rem 0;
     }
 
     .install-img {
         width: 10%;
+        filter: invert(0.5);
     }
 
     .user-img {
         width: 10%;
-    }
-
-    .install-img img, .user-img img {
-        width: 100%;
-    }
-
-    .user-img {
+        aspect-ratio: 1/1;
         background-color: var(--sw-grey);
         border-radius: 50%;
     }
 
+    .install-img img {
+        width: 80%;
+    }
 
+    .user-img img {
+        width: 70%;
+    }
 
+    .install-descr, .user-descr {
+        padding-left: .5rem;
+        font-weight: bold;
+    }
 
+    .user-descr {
+        color: var(--sw-white)
+    }
 
+    .install-user hr {
+        border: 1px solid var(--sw-grey);
+    }
 
 /* #endregion sidebar */
 
@@ -366,6 +381,4 @@
         display: inline-block;
     }
 
-
-    
 }
