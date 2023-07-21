@@ -16,6 +16,7 @@
         --sw-grey-home: #d2d2d2;  /* icona home */
         --sw-grey-pl: #a3a3a3;    /* icona crea playlist */
         --sw-grey: #707070;       /* testo */
+        --sw-lightgrey: #c1c1c1;
         --sw-yellow: #adff2f;     /* giallo dei bordini */
     }
 
@@ -101,6 +102,10 @@
 
     .col-2 {
         width: calc(100% /12 *2);
+    }
+
+    .ta-c {
+        text-align: center;
     }
 
 /* #endregion Utilities */
@@ -356,11 +361,11 @@
 
     .details {
         width: calc(100% /12*3);
+        padding-left: 1rem;
     }
 
     .song-cover {
-        width: 15%;
-        padding-left: 1rem;
+        width: 20%;
     }
 
     .song-cover img {
@@ -369,15 +374,33 @@
     }
 
     .song-detail {
-        padding-left: 1rem;
+        padding-left: .3rem;
+    }
+
+    .song-detail a {
+        text-decoration: none;
+        color: var(--sw-grey);
+        font-size: 10px;
+    }
+
+    .song-detail a:hover {
+        text-decoration: underline;
     }
 
     .icons {
-        padding-left: 1rem;
+        padding-left: .5rem;
     }
 
     .icons div {
         padding: 0 5px;
+    }
+
+    .icons a {
+        color: var(--sw-grey);
+    }
+
+    .icons a:hover {
+        color: var(--sw-white);
     }
 
     /* Player */
@@ -390,7 +413,7 @@
         width: 40%;
     }
 
-    .player-symb {
+    .player-symbols .symbol {
         font-size: 16px;
     }
 
@@ -416,7 +439,7 @@
 
     .bar.total {
         width: 100%;
-        background-color: yellow;
+        background-color: var(--sw-grey);
         position: relative;
     }
 
@@ -425,7 +448,7 @@
         top: 0;
         left: 0;
         width: 20%;
-        background-color: red;
+        background-color: var(--sw-lightgrey);
     }
 
     .bullet {
@@ -437,6 +460,15 @@
         border-radius: 50%;
         background-color: white;
         transform: translate(-50%, -25%);
+        display: none;
+    }
+
+    .bar.partial:hover {
+        background-color: yellow;
+    }
+
+    .bar.partial:hover .bullet {
+        display: block;
     }
 
 
@@ -471,6 +503,10 @@
     .col-6-xmd {
         width: calc(100% /12 *6);
     }
+
+    .fd-col-xmd {
+        flex-direction: column;
+    }
     
 }
 
@@ -495,10 +531,6 @@
 
     .logo .favicon {
         display: inline-block;
-    }
-
-    .fd-col-sm {
-        flex-direction: column;
     }
 
 }
