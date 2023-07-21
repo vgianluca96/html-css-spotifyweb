@@ -116,9 +116,15 @@
         text-decoration: none;
         color: var(--sw-white);
         border: 1px solid var(--sw-white);
-        margin: 20px;
-        padding: 10px 20px;
         border-radius: 30px;
+        padding: 10px 20px;
+        margin: 20px 40px;
+    }
+
+    .upgrade a:hover { 
+        font-size: 1.2em;
+        padding: 14px 24px;
+        margin: 12px 32px; 
     }
 
 /* #endregion Upgrade */
@@ -222,12 +228,11 @@
     .sidebar a {
         text-decoration: none;
         font-weight: bold;
-        filter: invert(.5);
+        filter: contrast(0);
     }
 
     .sidebar a.selected {
         color: var(--sw-white);
-        filter: invert(0);
         filter: brightness(.8);
         display: block;
         box-shadow: inset 4px 0px 0px var(--sw-yellow);
@@ -339,6 +344,11 @@
 
 /* #endregion sidebar */
 
+
+/* #region footer */
+
+
+/* #endregion footer */
 
 
 @media screen and (max-width: 1440px) {
