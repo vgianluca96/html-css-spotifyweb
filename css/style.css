@@ -424,12 +424,32 @@
 
     .player-time {
         width: 10%;
-        font-size: 8px;
+        font-size: 10px;
     }
+
+    .bar.partial:hover {
+        background-color: yellow;
+    }
+
+    .bar.partial:hover .bullet {
+        display: block;
+    }
+
+    /* Volume */
+
+    .volume {
+        width: calc(100% /12*3);
+    }
+
+    /* Barra di progress */
 
     .progress-bar {
         padding: 0rem .5rem;
         width: 80%;
+    }
+
+    .progress-bar.vol {
+        width: 60%;
     }
 
     .bar {
@@ -462,24 +482,6 @@
         transform: translate(-50%, -25%);
         display: none;
     }
-
-    .bar.partial:hover {
-        background-color: yellow;
-    }
-
-    .bar.partial:hover .bullet {
-        display: block;
-    }
-
-
-    /* Volume */
-
-    .volume {
-        width: calc(100% /12*3);
-    }
-
-
-
 
 /* #endregion footer */
 
