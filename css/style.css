@@ -374,7 +374,7 @@
     }
 
     .song-detail {
-        padding-left: .3rem;
+        padding-left: .5rem;
     }
 
     .song-detail a {
@@ -388,7 +388,7 @@
     }
 
     .icons {
-        padding-left: .5rem;
+        padding-left: 1rem;
     }
 
     .icons div {
@@ -417,6 +417,10 @@
         font-size: 16px;
     }
 
+    .player-symbols .symbol.play:hover {
+        font-size: 20px;
+    }
+
     .player-bar {
         padding-top: .5rem;
         width: 80%;
@@ -439,6 +443,10 @@
 
     .volume {
         width: calc(100% /12*3);
+    }
+
+    .volume-symbol {
+        padding-left: .5rem;
     }
 
     /* Barra di progress */
