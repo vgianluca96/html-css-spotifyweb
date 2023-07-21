@@ -31,12 +31,13 @@
     .sidebar {
         width: 230px;
         background-color: var(--sw-black);
+        overflow-y: auto;
     }
 
     .main-pg {
         width: calc(100% - 230px);
         background-color: var(--sw-dark);
-        overflow: auto;
+        overflow-y: auto;
     }
 
     footer {
