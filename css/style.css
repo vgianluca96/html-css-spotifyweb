@@ -31,7 +31,7 @@
     .sidebar {
         width: 230px;
         background-color: var(--sw-black);
-        overflow-y: auto;
+        overflow-y: hidden;
     }
 
     .main-sec {
@@ -354,6 +354,10 @@
 
     /* Dettagli brano */
 
+    .details {
+        width: calc(100% /12*3);
+    }
+
     .song-cover {
         width: 15%;
         padding-left: 1rem;
@@ -378,8 +382,25 @@
 
     /* Player */
 
+    .player {
+        width: calc(100% /12*6);
+    }
+
+    .player-symb {
+        padding: 0 1rem;
+        font-size: 20px;
+    }
+
+    .player-time {
+        padding: 0 1rem;
+    }
+
 
     /* Volume */
+
+    .volume {
+        width: calc(100% /12*3);
+    }
 
 
 
