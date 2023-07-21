@@ -79,6 +79,10 @@
         flex-direction: column;
     }
 
+    .fd-row {
+        flex-direction: row;
+    }
+
     .jc-fe {
         justify-content: flex-end;
     }
@@ -347,6 +351,32 @@
 
 /* #region footer */
 
+    footer {
+        color: var(--sw-white);
+    }
+
+    .song-cover {
+        width: 15%;
+        padding-left: 1rem;
+    }
+
+    .song-cover img {
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    .song-detail {
+        padding-left: 1rem;
+    }
+
+    .icons {
+        padding-left: 1rem;
+    }
+
+    .icons div {
+        padding: 0 5px;
+    }
+
 
 /* #endregion footer */
 
@@ -394,6 +424,10 @@
 
     .logo .favicon {
         display: inline-block;
+    }
+
+    .fd-col-sm {
+        flex-direction: column;
     }
 
 }
