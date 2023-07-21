@@ -386,13 +386,57 @@
         width: calc(100% /12*6);
     }
 
+    .player-symbols {
+        width: 40%;
+    }
+
     .player-symb {
-        padding: 0 1rem;
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .player-bar {
+        padding-top: .5rem;
+        width: 80%;
     }
 
     .player-time {
-        padding: 0 1rem;
+        width: 10%;
+        font-size: 8px;
+    }
+
+    .progress-bar {
+        padding: 0rem .5rem;
+        width: 80%;
+    }
+
+    .bar {
+        height: 4px;
+        border-radius: 8px;
+    }
+
+    .bar.total {
+        width: 100%;
+        background-color: yellow;
+        position: relative;
+    }
+
+    .bar.partial {
+        position: asolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        background-color: red;
+    }
+
+    .bullet {
+        position: absolute;
+        top: 0;
+        left: 20%;
+        height: 10px;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        background-color: white;
+        transform: translate(-50%, -25%);
     }
 
 
