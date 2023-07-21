@@ -144,6 +144,10 @@
         margin: 1rem .5rem;
     }
 
+    nav a:hover {
+        color: var(--sw-white);
+    }
+
 /* #endregion Navigatore */
 
 
@@ -217,24 +221,29 @@
 
     .sidebar a {
         text-decoration: none;
+        font-weight: bold;
+        filter: invert(.5);
+    }
+
+    .sidebar a.selected {
+        color: var(--sw-white);
+        filter: invert(0);
+        filter: brightness(.8);
+        display: block;
+        box-shadow: inset 4px 0px 0px var(--sw-yellow);
+    }
+
+    .sidebar a:hover {
+        color: var(--sw-white);
+        filter: invert(0);
+    }
+
+    .sidebar a.selected:hover {
+        filter: brightness(1);
     }
 
     .menu-voice {
         padding: .2rem 1rem;
-        color: var(--sw-grey);
-    }
-
-    .menu-voice.selected {
-        box-shadow: inset 4px 0px 0px var(--sw-yellow);
-        color: var(--sw-white);
-    }
-
-    .menu-voice img {
-        filter: invert(46%) sepia(1%) saturate(2664%) hue-rotate(356deg) brightness(95%) contrast(97%);
-    }
-
-    .menu-voice.selected img {
-        filter: grayscale(1);
     }
 
     .menu-voice-icon {
@@ -247,7 +256,6 @@
     }
 
     .menu-voice-name {
-        font-weight: bold;
         padding-left: .5rem;
     }
 
@@ -256,7 +264,6 @@
     .playlist {
         padding: 1rem;
         padding-top: 1.5rem;
-        color: var(--sw-grey);
     }
 
     .pl-title {
@@ -275,13 +282,7 @@
 
     .create-descr {
         padding-left: 1rem;
-        font-weight: bold;
         font-size: 14px;
-    }
-
-    .pl-name {
-        padding: .2rem 0;
-        font-weight: bold;
     }
 
     .pl-list {
@@ -289,11 +290,15 @@
         overflow: auto;
     }
 
+    .pl-list li {
+        padding: .2rem;
+        list-style: none;
+    }
+
     /* Menu bottom */
 
     .install-user {
         padding: 0 1rem;
-        color: var(--sw-grey);
     }
 
     .install, .user {
@@ -302,7 +307,6 @@
 
     .install-img {
         width: 10%;
-        filter: invert(0.5);
     }
 
     .user-img {
@@ -320,13 +324,13 @@
         width: 70%;
     }
 
-    .install-descr, .user-descr {
+    .user-descr {
         padding-left: .5rem;
         font-weight: bold;
     }
 
     .user-descr {
-        color: var(--sw-white)
+        color: var(--sw-white);
     }
 
     .install-user hr {
